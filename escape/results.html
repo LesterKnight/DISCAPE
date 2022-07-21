@@ -1,0 +1,70 @@
+
+<html>
+    <head>
+        <title>DISCAPE</title>
+    </head>
+    <body onload=" 
+	time = document.querySelector('#timer')
+	time.textContent = new Date(time.textContent * 1000).toISOString().substring(14, 19)
+	time = document.querySelector('#tempoTotal')
+	time.textContent = new Date(time.textContent * 1000).toISOString().substring(14, 19)
+	">
+        <h1>Resultados do teste</h1>
+        <h2>Variaveis do jogo</h2>
+        <table>
+            <tr>
+                <th>Variável</th>
+                <th>Valor</th>
+                <th>Descrição</th>
+            </tr>
+            <tr>
+                <td>Timer</td>
+                <td id='timer'>662</td>
+                <td>Tempo exibido no contador após o termino da partida</td>
+            </tr>
+            <tr>
+                <td>Passos</td>
+                <td>134</td>
+                <td>Número total de passos dado pelo jogador</td>
+            </tr>
+            <tr>
+                <td>Tempo total</td>
+                <td id='tempoTotal'>91</td>
+                <td>Tempo total de jogo</td>
+            </tr>
+        </table>
+		
+
+		<h2>Pontuação DISC</h2>
+            <table style="text-align: center;">
+                <tbody>
+				<tr>
+                    <th>Fator</th>
+                    <th>Pontuação</th>
+                    <th>Descrição</th>
+                </tr>
+				<tr>
+                    <td style="border: 2px solid;min-width: 200px;background: linear-gradient(90deg, #FFC0CB 80%,  white 0%);font-weight:bold;">Dominância</td>
+                    <td>4</td>
+                    <td style="text-align:left;">%Executor</td>
+                </tr>
+				<tr>
+                    <td style="border: 2px solid;min-width: 200px;background: linear-gradient(90deg, #D3FFC0 20%, white 0%);font-weight:bold;">Influência</td>
+                    <td>1</td>
+                    <td style="text-align:left;">%Comunicador</td>
+                </tr>
+				 <tr>
+                    <td style="border: 2px solid;min-width: 200px;background: linear-gradient(90deg, #C0FFEF 0%, white 0%);font-weight:bold;">Estabilidade</td>
+                    <td>0</td>
+                    <td style="text-align:left;">%Planejador</td>
+                </tr>
+				<tr>
+                    <td style="border: 2px solid;min-width: 200px;background: linear-gradient(90deg, #FFD7C0 0%, white 0%);font-weight:bold;">Conformidade</td>
+                    <td>0</td>
+                    <td style="text-align:left;">%Analista</td>
+                </tr>
+</table>
+
+ <h3>Thu Jul 21 15:40:36 Hora oficial do Brasil 2022</h3>
+    </body>
+</html>
